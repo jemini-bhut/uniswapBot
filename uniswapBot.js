@@ -22,12 +22,8 @@ const getPrice = async (inputAmount) => {
     )
     
     const tokenAddressUSDC = await poolContract.liquidity();
-    // console.log(tokenAddressDAI);
     const tokenAddressETH = await poolContract.token1(); 
-
-    /* console.log(tokenAddressDAI);
-    console.log(tokenAddressETH); */
-
+    
     const tokenABIUSDC = await getAbi(tokenAddressUSDC);
     const tokenABTETH = await getAbi(tokenAddressETH);
 
